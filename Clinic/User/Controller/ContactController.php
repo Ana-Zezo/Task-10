@@ -24,7 +24,7 @@ if (checkRequest("POST")) {
             "phone" => $phone,
             "email" => $email,
             "subject" => $subject,
-            "message" => $message
+            "message" => $msg
         ];
         $sql->insertData("contacts", $data);
         redirect("../pages/contact.php", "success_send", "Successful Send Message");

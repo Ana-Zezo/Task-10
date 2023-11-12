@@ -5,7 +5,6 @@ require_once "./classes/DB.php";
 $sql = new DB();
 $allMajor = $sql->getData("majors", "*", "status='1'");
 $doctors = $sql->getData("doctors", "*", "status='1'");
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +25,7 @@ $doctors = $sql->getData("doctors", "*", "status='1'");
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.rtl.min.css"
         integrity="sha512-wO8UDakauoJxzvyadv1Fm/9x/9nsaNyoTmtsv7vt3/xGsug25X7fCUWEyBh1kop5fLjlcrK3GMVg8V+unYmrVA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link rel="stylesheet" href="assets/styles/pages/main.css">
+    <link rel="stylesheet" href="User/assets/styles/pages/main.css">
 
     <title>Clinic</title>
 </head>
@@ -74,8 +73,8 @@ $doctors = $sql->getData("doctors", "*", "status='1'");
             <div class="container pb-5">
                 <div class="row gap-2">
                     <div class="col-sm order-sm-2">
-                        <img src="assets/images/banner.jpg" class="img-fluid banner-img banner-img" alt="banner-image"
-                            height="200">
+                        <img src="User/assets/images/banner.jpg" class="img-fluid banner-img banner-img"
+                            alt="banner-image" height="200">
                     </div>
                     <div class="col-sm order-sm-1">
                         <h1 class="h1">Have a Medical Question?</h1>
@@ -232,7 +231,7 @@ $doctors = $sql->getData("doctors", "*", "status='1'");
                 </div>
             </div>
             <div class="bottom--right bg-blue text-white">
-                <img src="assets/images/banner.jpg" class="img-fluid banner-img">
+                <img src="User/assets/images/banner.jpg" class="img-fluid banner-img">
             </div>
         </div>
     </div>
@@ -273,7 +272,7 @@ $doctors = $sql->getData("doctors", "*", "status='1'");
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"
         integrity="sha512-fHY2UiQlipUq0dEabSM4s+phmn+bcxSYzXP4vAXItBvBHU7zAM/mkhCZjtBEIJexhOMzZbgFlPLuErlJF2b+0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/scripts/home.js"></script>
+    <script src="User/assets/scripts/home.js"></script>
 </body>
 
 </html>

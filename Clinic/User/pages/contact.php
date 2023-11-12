@@ -24,7 +24,6 @@ if (isset($_SESSION["auth"])) {
             keyAndValueSession("message_error", "subject");
             keyAndValueSession("message_error", "msg");
             keySession("request_error");
-            dd($_SESSION);
             ?>
             <div class="form-items">
                 <div class="mb-3">

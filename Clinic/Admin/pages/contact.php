@@ -33,31 +33,31 @@ $count = 1;
                             <?php
                             foreach ($contacts as $row) {
                                 ?>
-                                <tr class="border">
-                                    <td scope="row" class="text-center py-5">
-                                        <?= $count++ ?>
-                                    </td>
-                                    <td class="py-5">
-                                        <?= $row["name"] ?>
-                                    </td>
-                                    <td class="py-5">
-                                        <?= $row["phone"] ?>
-                                    </td>
-                                    <td class="py-5">
-                                        <?= $row["email"] ?>
-                                    </td>
-                                    <td class="py-5">
-                                        <?= $row["subject"] ?>
-                                    </td>
-                                    <td class="py-5">
-                                        <?= $row["message"] ?>
-                                    </td>
+                            <tr class="border">
+                                <td scope="row" class="text-center py-5">
+                                    <?= $count++ ?>
+                                </td>
+                                <td class="py-5">
+                                    <?= $row["name"] ?>
+                                </td>
+                                <td class="py-5">
+                                    <?= $row["phone"] ?>
+                                </td>
+                                <td class="py-5">
+                                    <?= $row["email"] ?>
+                                </td>
+                                <td class="py-5">
+                                    <?= $row["subject"] ?>
+                                </td>
+                                <td class="py-5">
+                                    <?= $row["message"] ?>
+                                </td>
 
-                                    <td class="py-5">
-                                        <a href="../controller/Contact/deleteContactController.php?msg_id=<?= $row["id"] ?>"
-                                            class="btn btn-danger">Delete</a>
-                                    </td>
-                                </tr>
+                                <td class="py-5">
+                                    <a href="../controller/Contact/deleteContactController.php?msg_id=<?= $row["id"] ?>"
+                                        class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
                             <?php } ?>
                         </tbody>
                     </table>
